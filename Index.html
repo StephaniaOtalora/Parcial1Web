@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Parcial 1</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">
+                        <h1 class="logotipo">Restaurant & Lounge</h1>
+                    </div>
+                    <div class="p-2 flex-shrink-1 bd-highlight car">
+                        <img class="carrito" src="https://i.imgur.com/1EKrQIi.png" alt="Carrito de compras">
+                        <span id="numeroItems"> 0 items </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <img class="banner" src="https://i.imgur.com/S8Ffdqa.png" alt="Hamburguesa">
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col menu">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="Burgers-tab" data-toggle="pill" href="#Burgers" role="tab"
+                            aria-controls="Burgers" aria-selected="true">Burgers</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="Tacos-tab" data-toggle="pill" href="#Tacos" role="tab"
+                            aria-controls="Tacos" aria-selected="false">Tacos</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="Salads-tab" data-toggle="pill" href="#Salads" role="tab"
+                            aria-controls="Salads" aria-selected="false">Salads</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="Desserts-tab" data-toggle="pill" href="#Desserts" role="tab"
+                            aria-controls="Desserts" aria-selected="false">Desserts</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="DrinksandSides-tab" data-toggle="pill" href="#DrinksandSides" role="tab"
+                            aria-controls="DrinksandSides" aria-selected="false">Drinks and Sides</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="Burgers" role="tabpanel" aria-labelledby="Burgers-tab">
+                        <hr>
+                        <h1 class="tituloMenu">Burgers</h1>
+                        <hr>
+                        <div class="card" style="width: 18rem;" id="cardsBurgers">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Tacos" role="tabpanel" aria-labelledby="Tacos-tab">
+                        <hr>
+                        <h1 class="tituloMenu">Tacos</h1>
+                        <hr>
+                        <div class="card" style="width: 18rem;" id="cardsBurgers">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Salads" role="tabpanel" aria-labelledby="Salads-tab">
+                        <hr>
+                        <h1 class="tituloMenu">Salads</h1>
+                        <hr>
+                        <div class="card" style="width: 18rem;" id="cardsBurgers">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Desserts" role="tabpanel" aria-labelledby="Desserts-tab">
+                        <hr>
+                        <h1 class="tituloMenu">Desserts</h1>
+                        <hr>
+                        <div class="card" style="width: 18rem;" id="cardsBurgers">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="DrinksandSides" role="tabpanel" aria-labelledby="DrinksandSides-tab">
+                        <hr>
+                        <h1 class="tituloMenu">Drinks and Sides</h1>
+                        <hr>
+                        <div class="card" style="width: 18rem;" id="cardsBurgers">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
