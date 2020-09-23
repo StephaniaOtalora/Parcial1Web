@@ -1,17 +1,48 @@
-.logotipo{
-    font-family: 'Satisfy', cursive;
+.logotipo {
+  font-family: "Satisfy", cursive;
 }
 
-.carrito{
-    width: 10%;
+.carrito {
+  width: 10%;
 }
 
-.banner{
-    width: 100%;
+.banner {
+  width: 100%;
 }
-.car{
-    text-align: end;
+
+.car {
+  text-align: end;
 }
-.tituloMenu{
-    text-align: center;
+
+.tituloMenu {
+  text-align: center;
+}
+.menu {
+  background-color: black;
+  color: white;
+}
+
+a,
+a:active,
+a:hover,
+.nav-pills .nav-link.active {
+  color: white;
+  background-color: initial;
+}
+
+li {
+  margin: 2%;
+}
+
+.card {
+  width: 18rem;
+}
+
+.carr:hover {
+  color: blue;
+}
+
+.btn-light,
+.btn-danger{
+  border-color: black;
 }

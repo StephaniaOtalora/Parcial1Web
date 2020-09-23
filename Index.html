@@ -29,11 +29,11 @@
                         <h1 class="logotipo">Restaurant & Lounge</h1>
                     </div>
                     <div class="p-2 flex-shrink-1 bd-highlight car">
-                        <img class="carrito" src="https://i.imgur.com/1EKrQIi.png" alt="Carrito de compras">
-                        <span id="numeroItems"> 0 items </span>
+                        <a class="carr" onclick="order()"><img class="carrito" src="https://i.imgur.com/1EKrQIi.png"
+                                alt="Carrito de compras"></a>
+                        <span id="numeroItems"> </span>
                     </div>
                 </div>
-
             </div>
         </div>
         <hr>
@@ -42,69 +42,59 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col menu">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <div class="col">
+                <ul class="nav nav-pills mb-3  menu" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="Burgers-tab" data-toggle="pill" href="#Burgers" role="tab"
-                            aria-controls="Burgers" aria-selected="true">Burgers</a>
+                            aria-controls="Burgers" aria-selected="true" onclick="products('Burguers')">Burgers</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="Tacos-tab" data-toggle="pill" href="#Tacos" role="tab"
-                            aria-controls="Tacos" aria-selected="false">Tacos</a>
+                            aria-controls="Tacos" aria-selected="false" onclick="products('Tacos')">Tacos</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="Salads-tab" data-toggle="pill" href="#Salads" role="tab"
-                            aria-controls="Salads" aria-selected="false">Salads</a>
+                            aria-controls="Salads" aria-selected="false" onclick="products('Salads')">Salads</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="Desserts-tab" data-toggle="pill" href="#Desserts" role="tab"
-                            aria-controls="Desserts" aria-selected="false">Desserts</a>
+                            aria-controls="Desserts" aria-selected="false" onclick="products('Desserts')">Desserts</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="DrinksandSides-tab" data-toggle="pill" href="#DrinksandSides" role="tab"
-                            aria-controls="DrinksandSides" aria-selected="false">Drinks and Sides</a>
+                            aria-controls="DrinksandSides" aria-selected="false"
+                            onclick="products('Drinks and Sides')">Drinks and Sides</a>
                     </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="Burgers" role="tabpanel" aria-labelledby="Burgers-tab">
-                        <hr>
-                        <h1 class="tituloMenu">Burgers</h1>
-                        <hr>
-                        <div class="card" style="width: 18rem;" id="cardsBurgers">
-                        </div>
+
+            </div>
+        </div>
+
+        <div id="content"></div>
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cancel the order</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="tab-pane fade" id="Tacos" role="tabpanel" aria-labelledby="Tacos-tab">
-                        <hr>
-                        <h1 class="tituloMenu">Tacos</h1>
-                        <hr>
-                        <div class="card" style="width: 18rem;" id="cardsBurgers">
-                        </div>
+                    <div class="modal-body">
+                        Are you sure about cancelling the order?
                     </div>
-                    <div class="tab-pane fade" id="Salads" role="tabpanel" aria-labelledby="Salads-tab">
-                        <hr>
-                        <h1 class="tituloMenu">Salads</h1>
-                        <hr>
-                        <div class="card" style="width: 18rem;" id="cardsBurgers">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="Desserts" role="tabpanel" aria-labelledby="Desserts-tab">
-                        <hr>
-                        <h1 class="tituloMenu">Desserts</h1>
-                        <hr>
-                        <div class="card" style="width: 18rem;" id="cardsBurgers">
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="DrinksandSides" role="tabpanel" aria-labelledby="DrinksandSides-tab">
-                        <hr>
-                        <h1 class="tituloMenu">Drinks and Sides</h1>
-                        <hr>
-                        <div class="card" style="width: 18rem;" id="cardsBurgers">
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal" onclick="vaciar()">Yes, I want
+                            to cancel the order</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">No, I want to continue adding
+                            products</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
